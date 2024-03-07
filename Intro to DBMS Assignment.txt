@@ -1,0 +1,163 @@
+Q1:-
+Ans. 
+A database is a structured collection of data organized in a way that allows for efficient storage, retrieval, and manipulation of that data. It is a crucial component of most modern computer systems, serving as a central repository for storing and managing information.
+
+Need of database:-
+Databases are essential for efficiently organizing, storing, and managing large volumes of data in modern computing environments. They ensure data integrity and consistency by enforcing constraints, facilitate seamless data retrieval and querying through structured query languages, and support complex data relationships. 
+
+Q2:-
+Ans.
+File storage (aka file-based storage or file-level storage) is the type of data storage where data is stored in a hierarchical file and folder structure. A file is stored as a whole without breaking down the data into blocks, such as in block storage. Files can be stored in folders, which can then be placed in other folders in a nested structure. The directory path of the file and which folder it is stored in is needed to call up that file again from its storage location. NAS systems typically use file storage and are comparatively less expensive than block storage.
+
+Challenges:-
+	• Limited Data Structure
+	• Data Redundancy
+	• Limited Querying Capabilities
+	• Data Integrity Challenges
+	• Scalability Issues
+	• Security Concerns
+	
+Q3:-
+Ans.
+A Database Management System (DBMS) is software that enables users to define, create, maintain, and control access to databases. It serves as an interface between the database and its users, applications, and the operating system, providing a systematic way to manage and manipulate data.
+
+Need for DBMS:-
+	• Data Organization: DBMS provides a structured and organized way to store and manage large volumes of data efficiently. 
+	• Data Retrieval and Manipulation: DBMS offers powerful querying capabilities, allowing users to retrieve, manipulate, and analyze data easily.
+	• Data Security: DBMS includes built-in security features to control access to the database, ensuring that only authorized users can view or modify data. 
+	• Concurrency Control: In multi-user environments, DBMS manages concurrent access to the database to prevent data conflicts and maintain data consistency.
+	• Data Integrity and Recovery: DBMS enforces data integrity constraints to maintain the accuracy and reliability of stored data.
+
+Q4:-
+Ans.
+Limited Data Structure: File-based systems lack the structured organization inherent in databases. Without a centralized schema, data organization can become inconsistent and less intuitive, leading to difficulties in data retrieval and management.
+
+Data Redundancy: In file-based systems, the same data may be duplicated across multiple files, leading to redundancy and potential inconsistencies. This redundancy can result in wasted storage space and make it harder to maintain data integrity.
+
+Limited Querying Capabilities: File-based systems typically lack sophisticated querying capabilities. Retrieving specific data requires manual searching through files, which can be time-consuming and inefficient, especially with large datasets.
+
+Data Integrity Challenges: Ensuring data integrity in file-based systems is more challenging compared to databases. Without built-in mechanisms for enforcing constraints and relationships, maintaining data consistency and accuracy becomes more reliant on manual processes, increasing the risk of errors and inconsistencies.
+
+Scalability Issues: File-based systems may face scalability limitations as the volume of data grows. Managing a large number of individual files can become cumbersome and inefficient, leading to performance degradation and operational challenges.
+
+Q5:-
+Ans.
+Based on Data Model:
+
+Relational DBMS (RDBMS):
+
+Explanation: RDBMS organizes data into tables, where each table consists of rows (records) and columns (attributes). It enforces relationships between tables through primary and foreign keys, ensuring data integrity and enabling efficient querying using SQL (Structured Query Language).
+Example: MySQL, PostgreSQL, Oracle Database.
+Non-Relational (NoSQL) DBMS:
+
+Explanation: NoSQL databases store and retrieve data using models other than the traditional relational model. They offer flexibility in schema design, scalability, and performance for handling unstructured or semi-structured data.
+Types:
+Document Stores: Store data in flexible, schema-less documents (e.g., MongoDB).
+Key-Value Stores: Store data as key-value pairs (e.g., Redis, Amazon DynamoDB).
+Column-Family Stores: Store data in columns grouped into column families (e.g., Apache Cassandra).
+Graph Databases: Represent data as graphs with nodes, edges, and properties (e.g., Neo4j).
+Based on Database Architecture:
+
+Centralized DBMS:
+
+Explanation: In a centralized DBMS architecture, all data and processing reside on a single server or mainframe. This architecture is simpler to manage but may suffer from scalability and single point of failure issues.
+Example: Microsoft Access.
+Distributed DBMS (DDBMS):
+
+Explanation: DDBMS distributes data across multiple interconnected servers or nodes, offering scalability, fault tolerance, and improved performance. Data can be replicated or partitioned across nodes to enhance availability and reduce latency.
+Example: Google Spanner, Apache Hadoop.
+Based on User Model:
+
+Single-User DBMS:
+
+Explanation: Single-user DBMS is designed for individual users or small-scale applications where only one user accesses the database at a time. These systems are typically used for personal or small business purposes.
+Example: Microsoft Access (desktop version).
+Multi-User DBMS:
+
+Explanation: Multi-user DBMS supports concurrent access by multiple users, ensuring data consistency and integrity through concurrency control mechanisms like locking and transaction management.
+Example: MySQL, PostgreSQL, Oracle Database.
+Based on Application Domain:
+
+Operational DBMS (OLTP):
+
+Explanation: OLTP systems are optimized for transaction processing, handling frequent read and write operations in real-time. They are used in applications requiring fast data processing and immediate data access, such as online banking or e-commerce platforms.
+Example: Microsoft SQL Server, MySQL.
+Analytical DBMS (OLAP):
+
+Explanation: OLAP systems are designed for complex queries and analytics on large datasets. They facilitate decision support, business intelligence, and data warehousing applications by providing capabilities for data aggregation, slicing, and dicing.
+Example: Apache Hive, Snowflake, Google BigQuery.
+Based on Data Accessibility:
+
+Online DBMS:
+Explanation: Online DBMS provides continuous, real-time access to data over a network or the internet. These systems support immediate data updates and transactions, enabling real-time applications and services.
+Example: Cloud-based databases like Amazon RDS, Microsoft Azure SQL Database.
+
+Q6:-
+Ans. Significance of Data Modelling
+	• Data modelling is significant in database management systems as it provides a structured framework for understanding, organizing, and representing data. By defining the structure, relationships, and constraints of data, data modelling ensures data integrity, facilitates effective communication between stakeholders, guides the database design process, and helps align database structures with business requirements. 
+	
+	Types of Data Models:-
+	
+	Entity-Relationship (ER) Model:
+	
+	• Represents data using entities, attributes, and relationships.
+	• Entities are objects or concepts in the real world with attributes describing their properties.
+	• Relationships define associations between entities.
+	• Utilizes entity-relationship diagrams (ERDs) to visually represent entities, attributes, and relationships.
+	
+	Hierarchical Data Model:
+	
+	• Organizes data in a tree-like structure with parent-child relationships.
+	• Each record (or node) has one parent record except for the root record, which has no parent.
+	• Characterized by one-to-many relationships where each parent record can have multiple child records.
+	
+	Network Data Model:
+	
+	• Extension of the hierarchical model allowing more complex relationships between records.
+	• Organizes records in a graph-like structure where each record can have multiple parent and child records.
+	• Enables many-to-many relationships between records.
+	
+	Relational Data Model:
+	
+	• Organizes data into tables consisting of rows and columns.
+	• Each table represents an entity, and each row represents a record or instance of that entity.
+	• Relationships between entities are established using keys (primary and foreign keys).
+	• Based on set theory and predicate logic.
+	• Standardized through SQL (Structured Query Language).
+	• Simple, flexible, and widely adopted due to its conceptual simplicity and support for data integrity principles.
+	
+	Object-Oriented Data Model:
+	
+	• Represents data as objects, which encapsulate data (attributes) and behaviors (methods).
+	• Supports concepts of inheritance, encapsulation, and polymorphism.
+	• Allows for complex data structures and relationships.
+	• Widely used in object-oriented programming languages and systems.
+	
+Q7:-
+Ans.
+External or View Schema:
+
+	• This schema represents how users perceive the data. It defines various user views or subsets of the database tailored to specific user needs.
+	• Each user or application interacts with the database through its designated view schema, which may include different subsets of data or present data in a customized format.
+Advantages:
+	• Data Independence: Changes to the conceptual or internal schema do not affect external schemas, providing a level of data independence.
+	• Customization: Users can define their views of the data, allowing for customization based on specific requirements.
+	• Security: Access control mechanisms can be implemented at the view level, ensuring that users only have access to the data they are authorized to view.
+
+Conceptual Schema:
+
+	• This schema represents the entire database from a conceptual perspective, independent of any specific application or user view.
+	• It defines the logical structure of the entire database, including entities, attributes, relationships, and constraints.
+Advantages:
+	• Data Integration: Provides a unified and consistent view of the entire database, facilitating data integration and sharing among different applications.
+	• Data Independence: Acts as an intermediary between external and internal schemas, providing a level of abstraction that shields users and applications from changes in the physical storage structure.
+	• Database Design: Guides the overall database design process by defining the logical structure and relationships between data elements.
+
+Internal or Physical Schema:
+
+	• This schema represents how data is physically stored in the database system, including storage structures, access paths, and optimization techniques.
+	• It defines the physical implementation details such as file organization, indexing, and storage allocation.
+Advantages:
+	• Performance Optimization: Enables database administrators to optimize storage structures and access paths to enhance performance and efficiency.
+	• Security and Integrity: Allows for the implementation of security measures such as encryption and data integrity mechanisms at the physical level.
+Resource Management: Provides control over physical resources such as disk space and memory allocation, ensuring efficient utilization of hardware resources.
